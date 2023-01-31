@@ -26,7 +26,7 @@ $(".time-block").each(function () {
         $(this).children(".description").removeClass("past");
     }
     else {
-        $(this).children(".description").Class("future");
+        $(this).children(".description").addClass("future");
         $(this).children(".description").removeClass("present");
         $(this).children(".description").removeClass("past");
     }
