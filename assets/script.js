@@ -34,4 +34,10 @@ $(".time-block").each(function () {
     
 })
 
+$(".saveBtn").on("click", function(){
+    
+    var time = $(this).parent().attr("id");
+    var text = $(this).siblings(".description").val();
 
+    localStorage.setItem(time, text);
+})
